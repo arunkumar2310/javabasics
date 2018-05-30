@@ -1,7 +1,9 @@
+package com.basic;
+
 public class Datatype{
 public static void main(String s[]){
-int a=44;
-int b=66;
-float c=(float)(a+b);
-System.out.println(c);
+int var1=44;
+int var2=66;
+float var3=(float)(var1+var2);
+System.out.println(var3);
 }}
