@@ -1,4 +1,4 @@
-package com.basic;
+package com.worksheet_answers;
 
 public class Employee {
 	private String firstName;
@@ -49,7 +49,6 @@ public static void main(String[] args)
     p1.setSalary(salary1);
     p2.setSalary(salary2);
     System.out.println("After increment of 10%"); 
-   
     System.out.println("Name of Employee_1:"+firstName1+" "+lastName1+"\n"+"Salary/annum:Rs."+salary1);
 	System.out.println("Name of Employee_2:"+firstName2+" "+lastName2+"\n"+"Salary/annum:Rs."+salary2);
     
