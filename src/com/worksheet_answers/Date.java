@@ -37,7 +37,7 @@ public void displayDate()
 }
 public static void main(String args[]) {
 	Date day=new Date();
-	int date=day.setDay(23);
+	day.setDay(23);
 	day.setMonth(10);
 	day.setYear(1997);
 	day.displayDate();
