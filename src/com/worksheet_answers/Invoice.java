@@ -45,18 +45,18 @@ public class Invoice {
 		}
 		return pricePerItem;
 	}
-	public double getInvoiceAmount(int quantity,int price)
+	public double getInvoiceAmount()
 	{
-		double amount=quantity*price;
+		double amount=quantity*pricePerItem;
 		return amount;
 	}
 	public static void main(String args[]) {
 		Invoice v1=new Invoice();
 		v1.setPartDescription("Screwdricer");
 		v1.setPartNumber("0011R");
-		int quantity=v1.setPriceperItem(100);
-		int price=v1.setQuantity(10);
-		double total=v1.getInvoiceAmount(quantity, price);
+		v1.setPriceperItem(100);
+		v1.setQuantity(10);
+		double total=v1.getInvoiceAmount();
 		System.out.println("Part Name:"+v1.getPartDescription()+"\n"+"Part description:"+v1.getPartNumber()+"\n"+"Total="+total);
 	}
 }
