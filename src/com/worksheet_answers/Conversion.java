@@ -21,7 +21,7 @@ public class Conversion {
       }
       public void Fahrenheit() {
     	  float fahrenheitt =(float) (9.0 / 5.0 * celsius + 32);
-    	  System.out.println(fahrenheitt);
+    	  System.out.println(fahrenheitt) ;
       }
       public static void main(String[] args)
       {
