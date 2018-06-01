@@ -1,15 +1,15 @@
 package com.worksheet_answers;
 
 public class SavingsAccount {
-	private double savingsbalance;
-	private double annualInterestRate;
+    static double savingsbalance;
+	static double annualInterestRate;
 
 	public double getAnnualInterestRate() {
 		return annualInterestRate;
 	}
 
 	public void setAnnualInterestRate(double annualInterestRate) {
-		this.annualInterestRate = annualInterestRate;
+		SavingsAccount.annualInterestRate = annualInterestRate;
 	}
 
 	public double getSavingsbalance() {
@@ -17,7 +17,7 @@ public class SavingsAccount {
 	}
 
 	public void setSavingsbalance(double savingsbalance) {
-		this.savingsbalance = savingsbalance;
+		SavingsAccount.savingsbalance = savingsbalance;
 	}
 	public double calculateMonthlyInterest()
 	{
@@ -25,7 +25,7 @@ public class SavingsAccount {
 	}
     public void modifyInterestRate(double annualInterestRate)
     {
-    	this.annualInterestRate=annualInterestRate;
+    	SavingsAccount.annualInterestRate=annualInterestRate;
     }
     public static void main(String[] args)
     {
