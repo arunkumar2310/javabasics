@@ -8,7 +8,7 @@ public class SavingsAccount {
 		return annualInterestRate;
 	}
 
-	public void setAnnualInterestRate(double annualInterestRate) {
+	public static void setAnnualInterestRate(double annualInterestRate) {
 		SavingsAccount.annualInterestRate = annualInterestRate;
 	}
 
@@ -32,13 +32,12 @@ public class SavingsAccount {
     	SavingsAccount saver1=new SavingsAccount();
     	SavingsAccount saver2=new SavingsAccount();
     	saver1.setSavingsbalance(3000.00);
-    	saver1.setAnnualInterestRate(4);
+    	SavingsAccount.setAnnualInterestRate(4);
     	saver2.setSavingsbalance(2000.00);
     	System.out.println("Monthly interest for saver1="+saver1.calculateMonthlyInterest());
     	System.out.println("Monthly interest for saver2="+saver2.calculateMonthlyInterest());
     	SavingsAccount.modifyInterestRate(5);
     	System.out.println("After increasing interest rate"+"\n"+"Monthly interest for saver1="+saver1.calculateMonthlyInterest());
     	System.out.println("Monthly interest for saver2="+saver2.calculateMonthlyInterest());
-    	
-    }
+   }
 }
