@@ -10,6 +10,6 @@ public class GetInput {
 		int num=scan.nextInt();
 		System.out.println("enter your CGPA");
 	    double mark=scan.nextDouble();
-	    System.out.println("My details \nName:"+name+"\nNumber:"+num+"\nmarks:");
+	    System.out.println("My details \nName:"+name+"\nNumber:"+num+"\nmarks:"+mark);
 	}
 }
