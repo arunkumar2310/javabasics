@@ -64,7 +64,6 @@ public class Salary {
 	
 	public static void main(String args[]) {
 		Salary s1=new Salary();
-		
 		s1.calSalary();
 		s1.findMax();
 		s1.toPrint();
