@@ -55,11 +55,15 @@ public class FindPassword {
 			// {
 			// System.out.println(a[k]);
 			// }
-			if ((a[0] == a[1]) || (a[1] == 0)) {
+			if((a[4]==0 && a[3]==a[1])&&(a[3]==0 && a[2]==a[1])) {
+				stable[x]=num;
+			}
+			else if ((a[0] == a[1]) || (a[1] == 0)) {
 				// System.out.println("stable"+num);
 				stable[x] = num;
 				x++;
-			} else {
+			} 
+			else {
 				// System.out.println("unstable"+num);
 				unstable[y] = num;
 				y++;
