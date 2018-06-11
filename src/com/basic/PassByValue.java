@@ -1,6 +1,6 @@
 package com.basic;
 
-public class PassByValue {
+public class PassByValue{
 	 int speed;
 /*	public int getSpeed() {
 		return speed;
