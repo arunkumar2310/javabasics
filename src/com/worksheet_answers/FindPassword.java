@@ -57,6 +57,7 @@ public class FindPassword {
 			// }
 			if((a[4]==0 && a[3]==a[1])&&(a[3]==0 && a[2]==a[1])) {
 				stable[x]=num;
+				x++;
 			}
 			else if ((a[0] == a[1]) || (a[1] == 0)) {
 				// System.out.println("stable"+num);
