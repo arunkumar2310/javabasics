@@ -80,7 +80,6 @@ public class WifiPassword {
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Enter the room number");
 		room=scan.nextInt();
-		//room=333;
 		System.out.println("Enter your name");
 		myName=scan.next();
 		one.unitsPlace(room);
