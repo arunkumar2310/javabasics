@@ -66,9 +66,15 @@ public class WifiPassword {
 		else {
 			thousandsPlaceValue=sum;
 		}
+		if(thousandsPlaceValue%2!=0) {
+			thousandsPlaceValue=thousandsPlaceValue-1;
+		}
+		if(thousandsPlaceValue==0) {
+			thousandsPlaceValue=thousandsPlaceValue+2;
+		}
 		
 	}
-	public void concatenate() {
+	public void createWifiPin(int roomNumber,String lastName) {
 		wifiPassword=thousandsPlaceValue+""+hundredsPlaceValue+""+tensPlaceValue+""+unitsPlaceValue;
 		System.out.println(wifiPassword);
 	}
@@ -86,7 +92,7 @@ public class WifiPassword {
 		one.tensPlace(myName);
 		one.hunderdsPlace(room);
 		one.thousandsPlace(room);
-		one.concatenate();
+		one.createWifiPin(room,myName);
 	}
 
 }

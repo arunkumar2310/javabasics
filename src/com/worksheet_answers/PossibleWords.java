@@ -13,10 +13,10 @@ public class PossibleWords {
 		 dir=s2.split(":");
 		
 	}
-	public void possibleWord(PossibleWords obj){
+	public void identifyPossibleWords(PossibleWords obj,String input1){
 		for(int i=0;i<dir.length;i++) {
 			String s=dir[i];
-			if(s.startsWith(find[0])&&s.endsWith(find[1])) {
+			if((s.startsWith(find[0])&&s.endsWith(find[1]))&&(s.length()==input1.length())) {
 				answer[k]=s.toUpperCase();
 				k++;
 			}
@@ -46,6 +46,6 @@ public class PossibleWords {
 		PossibleWords obj=new PossibleWords();
 		obj.split1(input1);
 		obj.split2(input2);
-		obj.possibleWord(obj);
+		obj.identifyPossibleWords(obj,input1);
 		}
 }

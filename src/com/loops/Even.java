@@ -1,4 +1,4 @@
-package loops;
+package com.loops;
 
 public class Even {
 	public static void main(String args[]) {

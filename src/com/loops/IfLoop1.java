@@ -1,4 +1,4 @@
-package loops;
+package com.loops;
 import java.util.Scanner;
 
 public class IfLoop1 {

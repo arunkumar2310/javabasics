@@ -1,4 +1,4 @@
-package commandLineArgs;
+package com.commandLineArgs;
 
 public class Welcome {
 	public static void main(String args[]) {

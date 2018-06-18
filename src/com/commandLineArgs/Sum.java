@@ -1,4 +1,4 @@
-package commandLineArgs;
+package com.commandLineArgs;
 
 public class Sum {
 	public static void main(String args[]) {
