@@ -32,12 +32,17 @@ public class IsPalindromePossible {
 		for(int k:freq) {
 			System.out.println(k);
 		}
+		int j=0;
 		
 		if(x%2!=0) {
-			//if(freq[9]==1||freq[9]==3||freq[9]==9||freq[9]==5||freq[9]==7) {
-				//System.out.println("Palindrome is possible");
-			//}
-			if((freq[9]%2==0&&freq[8]%2==1&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==0&&freq[7]==0)||(freq[9]%2==0&&freq[8]%2==0&&freq[7]%2==1&&freq[6]==0)) {
+			for(int i=0;i<freq.length;i++) {
+				if(freq[i]%2==1) {
+					j++;
+				}
+			}
+			
+			if(j==1) {
+			//if((freq[9]%2==0&&freq[8]%2==1&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==0&&freq[7]==0)||(freq[9]%2==0&&freq[8]%2==0&&freq[7]%2==1&&freq[6]==0)) {
 				System.out.println("Palindrome is possible");
 			}
 			else {
@@ -45,10 +50,15 @@ public class IsPalindromePossible {
 			}
 		}
 		else {
-			//if(freq[9]==2||freq[9]==4||freq[9]==6||freq[9]==8) {
-		//		System.out.println("palindrome is possible");
-			//}
-			if((freq[9]%2==0&&freq[8]%2==0&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==1&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==1&&freq[7]%2==1&&freq[6]==0)||(freq[9]%2==0&&freq[8]%2==0&&freq[7]%2==0&&freq[6]==0)) {
+			for(int i=0;i<freq.length;i++) {
+				if(freq[i]%2==0) {
+					j++;
+					break;
+				}
+			}
+
+			//if((freq[9]%2==0&&freq[8]%2==0&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==1&&freq[7]==0)||(freq[9]%2==1&&freq[8]%2==1&&freq[7]%2==1&&freq[6]==0)||(freq[9]%2==0&&freq[8]%2==0&&freq[7]%2==0&&freq[6]==0)) {
+			if(j%2==0) {	
 				System.out.println("palindrome is possible");
 			}
 			else {
@@ -59,7 +69,6 @@ public class IsPalindromePossible {
 	public static void main(String args[]) {
 		Scanner scan=new Scanner(System.in);
 		int input=scan.nextInt();
-		
 		isPalindrome(input);
 	}
 }
