@@ -8,5 +8,18 @@ public static void main(String Args[]) {
 	for(int i=0;i<5;i++) {
 		System.out.println(b[i]);
 	}
+	String c="meow";
+	String d=c+"deal";
+	String e="meowdeal";
+	String f="meowdeal";
+	System.out.println("d="+d);
+	System.out.println("e="+e);
+	System.out.println("f="+f);
+	System.out.println("d="+d.hashCode());
+	System.out.println("e="+e.hashCode());
+	System.out.println("f="+f.hashCode());
+	System.out.println(d==e);
+	System.out.println(d.equals(e));
+	System.out.println(e==f);
 }
 }
