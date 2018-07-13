@@ -15,6 +15,8 @@ public class ArrayList1 {
 		List<Employee> empList=new ArrayList<Employee>(Arrays.asList(arr));
 		empList.add(new Employee(5,"ak","aaa",87));
 		System.out.println(empList);
+		System.out.println(empList.get(1));
+		System.out.println(empList.get(4));
 		
 		Comparator<Employee> comparator=new Comparator<Employee>() {
 			@Override
