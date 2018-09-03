@@ -8,9 +8,9 @@ public static void main(String Args[]) {
 	for(int i=0;i<5;i++) {
 		System.out.println(b[i]);
 	}
+	String e="meowdeal";
 	String c="meow";
 	String d=c+"deal";
-	String e="meowdeal";
 	String f="meowdeal";
 	System.out.println("d="+d);
 	System.out.println("e="+e);

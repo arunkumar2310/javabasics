@@ -21,7 +21,7 @@ public class StringCode {
 			}
 			
 			else {
-				System.out.println("  ODD");
+				//System.out.println("  ODD");
 				for(int j=0;j<=b.length/2;j++) {
 				
 					if(j==b.length/2) {
@@ -33,7 +33,7 @@ public class StringCode {
 						 e=(m-n);
 					}
 				    sum=sum+e;
-				    //System.out.println(b.length/2+" "+j+" "+m+" "+n+" "+" "+e+" "+sum);
+				   // System.out.println(b.length/2+" "+j+" "+m+" "+n+" "+" "+e+" "+sum);
 				}
 			    }
 			
